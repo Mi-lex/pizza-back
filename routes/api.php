@@ -13,6 +13,10 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::group([
+    'prefix' => 'menu_items'
+], function () {
+    Route::get('/', 'MenuItemController@list');
+    Route::get('types', 'TypeController@list'); 
+    Route::get('/{type}', 'MenuItemsController@listOfType');
 });
