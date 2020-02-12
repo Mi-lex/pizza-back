@@ -44,7 +44,7 @@ class MenuItemSeeder extends Seeder
                 'type_id' => $pizzaTypeId,
             ],
             [
-                'name' => 'greek',
+                'name' => 'tropical hawaiian',
                 'type_id' => $pizzaTypeId,
             ],
             [
@@ -65,7 +65,7 @@ class MenuItemSeeder extends Seeder
                 'type_id' => $drinksTypeId,
             ],
             [
-                'name' => 'monster_original',
+                'name' => 'monster original',
                 'type_id' => $drinksTypeId,
             ],
             [
