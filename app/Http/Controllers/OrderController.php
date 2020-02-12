@@ -39,6 +39,6 @@ class OrderController extends Controller
 
         $order->orderItems()->saveMany($orderItems);
 
-        return response()->json(['success' => true], 200);
+        return response()->json(['message' => "Your order id is $order->id"], 200);
     }
 }
