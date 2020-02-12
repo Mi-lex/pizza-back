@@ -17,6 +17,13 @@ Route::group([
     'prefix' => 'menu_items'
 ], function () {
     Route::get('/', 'MenuItemController@list');
-    Route::get('types', 'TypeController@list'); 
+    Route::get('types', 'TypeController@list');
     Route::get('/{type}', 'MenuItemsController@listOfType');
+});
+
+Route::group([
+    'prefix' => 'orders'
+], function () {
+    Route::get('/', 'OrderController@list');
+    Route::post('/', 'OrderController@store');
 });
