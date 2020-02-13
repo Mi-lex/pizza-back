@@ -36,3 +36,7 @@ Route::group([
 });
 
 Route::get('/users/{phone}/orders', 'UserController@orders');
+
+Route::get('{any}', function () {
+    return view('app');
+})->where('any', '.*');
