@@ -34,3 +34,5 @@ Route::group([
     Route::post('/signup', 'AuthController@register');
     Route::post('/login', 'AuthController@login');
 });
+
+Route::get('/users/{phone}/orders', 'UserController@orders');
