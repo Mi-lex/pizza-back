@@ -51,10 +51,6 @@ class MenuItemSeeder extends Seeder
                 'name' => 'classic super',
                 'type_id' => $pizzaTypeId,
             ],
-            [
-                'name' => 'tropical_hawaiian',
-                'type_id' => $pizzaTypeId,
-            ],
             // Drinks
             [
                 'name' => 'coke',

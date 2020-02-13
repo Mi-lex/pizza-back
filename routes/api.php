@@ -27,3 +27,10 @@ Route::group([
     Route::get('/', 'OrderController@list');
     Route::post('/', 'OrderController@store');
 });
+
+Route::group([
+    'prefix' => 'auth'
+], function () {
+    Route::post('/signup', 'AuthController@register');
+    Route::post('/login', 'AuthController@login');
+});
