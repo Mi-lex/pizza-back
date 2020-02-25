@@ -11,7 +11,7 @@ There should also be mysql database.
 `git clone https://github.com/Mi-lex/pizza-back.git pizza-app`
 `cd pizza-app`
 
-2.Switch to the deployment branch:
+2. Switch to the deployment branch:
 `git checkout fullapp`
 
 3. install all php packages
