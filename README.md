@@ -1,11 +1,18 @@
-# pizza-back
+# PizzaApp (Back)
 
-For local deplyment of the app, make sure you have php >= 7.2.0 and composer installed.
+Web application for ordering pizza, which contains a shopping cart. Besides pizza, there are another available items in the menu.
+App provide an opportunity for checking out an order, taking delivery address and contact details (phone number).
+Login is not required but could be available for checking the history of orders. 
+This repository is back-end part of SPA application. Frontend version locates [here](https://github.com/Mi-lex/pizza-back).
+
+### Prerequisites
+
+For local deplyment of the app, make sure you have php >= 7.2.0, mysql and composer, installed.
 
 `composer`, 
 `php -v` 
 
-There should also be mysql database.
+## Deployment
 
 1. run 
 `git clone https://github.com/Mi-lex/pizza-back.git pizza-app`
@@ -23,14 +30,18 @@ There should also be mysql database.
 5. generate key:
 `php artisan key:generate`
 
-6. Make sure that DB key in .env file are relavent
+6. make sure that DB key in .env file are relavent
 
 7. run migrations and seed db
 `php artisan migrate --seed`
 
-8. Open resources\views\app.blade.php and change secure_asset() to asset()
+8. open resources\views\app.blade.php and change secure_asset() to asset()
 
 9. run a server
 `php artisan serve`
 
 10. go to the http://127.0.0.1:8000
+
+## Built With
+
+* [Laravel](https://github.com/laravel/laravel) - The framework used
