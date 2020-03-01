@@ -9,13 +9,13 @@
     <meta name="description" content="Small fullstack pizza shot app.">
     <meta name"keywords" content="laravel, react, react-router, redux, redux-saga">
     <meta name="author" content="Mishin Alexey">
-    <link href="{{secure_asset('/app.a3763aa3a14c6f5ae5cc.css')}}" rel="stylesheet">
+    <link href="{{mix('app.css')}}" rel="stylesheet">
     <base href="/">
 </head>
 
 <body>
     <div id="root"></div>
-    <script type="text/javascript" src="{{secure_asset('/app.a3763aa3a14c6f5ae5cc.js')}}"></script>
+    <script type="text/javascript" src="{{mix('app.js')}}"></script>
 </body>
 </body>
 
